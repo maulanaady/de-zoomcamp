@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:13
+    restart: always
+    environment:
+      - POSTGRES_USER=maulana
+      - POSTGRES_PASSWORD=zoomcamp
+      - POSTGRES_DB=ny_taxi
+    ports:
+      - 5432:5432
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "maulana"]
+      interval: 5s
+      retries: 5
+    volumes: 
+      - ./ny_taxi_postgres_data:/var/lib/postgresql/data
+    networks:
+      - pg_network
+
+
+  pg_admin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=adysulton@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=zoomcamp
+    ports:
+      - 8080:80
+    networks:
+      - pg_network      
+
+
+networks:
+  pg_network:
+    name: "zoomcamp_network"
