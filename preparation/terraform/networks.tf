@@ -1,3 +1,5 @@
+## networks
+
 resource "google_compute_network" "vpc_network" {
   name                    = "mageai-network"
   auto_create_subnetworks = true

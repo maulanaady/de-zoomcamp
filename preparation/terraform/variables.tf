@@ -1,3 +1,5 @@
+## variables
+
 variable "credentials" {
   default = "./service_account.json"
   type    = string
