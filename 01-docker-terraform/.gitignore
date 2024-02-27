@@ -2,8 +2,7 @@ venv
 *.json
 *.parquet
 *.csv
-*.gz
-ny_taxi_postgres_data/
+ny_taxi_data/
 answer.md
 
 # Local .terraform directories

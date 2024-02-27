@@ -1,5 +1,5 @@
 variable "credentials" {
-  default = "./keys/service-account.json"
+  default = "./service-account.json"
 }
 
 variable "project" {
