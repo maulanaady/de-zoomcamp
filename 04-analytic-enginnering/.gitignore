@@ -170,4 +170,4 @@ scratch*
 **/mage_data*
 *secrets*.json
 **.json
-**.profiles.yml
+**/profiles.yml
