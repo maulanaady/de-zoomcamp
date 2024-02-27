@@ -155,7 +155,7 @@ docker-compose.override.yml
 
 # Terraform files
 **/.terraform*
-*.tfstate*
+**.tfstate*
 *.zip
 
 # vscode
@@ -167,7 +167,7 @@ node_modules
 
 # Scratch files
 scratch*
-/mage_data*
+**/mage_data*
 *secrets*.json
 magic-zoomcamp
-*.json
+**.json
