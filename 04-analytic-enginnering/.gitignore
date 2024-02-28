@@ -171,3 +171,6 @@ scratch*
 *secrets*.json
 **.json
 **/profiles.yml
+**/package-lock.yml
+**/dbt_packages/*
+**/.user.yml
